@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 #define Max 3
 using namespace std;
+class MeritCalculation;
 class Course
 {
     float Grade;
@@ -16,9 +17,9 @@ public:
     {
         cin>>Credits;
     }
-    void SetGradePoints(float tempgradepoints)
+    void SetGradePoints(float TempGradePoints)
     {
-        GradePoints=tempgradepoints;
+        GradePoints=TempGradePoints;
     }
     float GetGrade()
     {
@@ -38,18 +39,15 @@ class Student
 {
     int StudentID;
     float CGPA;
-    float TemporaryCGPA;
     Course NumberofCourse[Max];
 public:
     void InsertStudentInformation(int Serial,int StudentNumber);
+    void StudentResult(Student student[],MeritCalculation StudentMerit[],int StudentRoll,int StudentNumber);
     void CalculateCGPA();
-    void SetStudentID(int TemporaryStudentID)
+    bool CheckDuplicateStudentID(Student student[],int Size,int StudentID);
+    void SetStudentID(int StudentID)
     {
-        StudentID=TemporaryStudentID;
-    }
-    void SetTemporaryCGPA(float tempCGPA)
-    {
-        TemporaryCGPA=tempCGPA;
+        this->StudentID=StudentID;
     }
     float GetCGPA()
     {
@@ -59,11 +57,69 @@ public:
     {
         return StudentID;
     }
-    float GetTemporaryCGPA()
-    {
-        return TemporaryCGPA;
-    }
 
+};
+
+class MeritCalculation
+{
+    int Merit;
+public:
+    void SetMerit(int Merit)
+    {
+        this->Merit=Merit;
+    }
+    int GetMerit()
+    {
+        return Merit;
+    }
+    void MeritDeterminer(MeritCalculation StudentMerit[],Student student[],int StudentNumber)
+    {
+        float *arr=new float[StudentNumber];
+
+        for(int i=0; i<StudentNumber; i++)
+        {
+            arr[i]=student[i].GetCGPA();
+        }
+
+        for(int i=0; i<StudentNumber; i++)
+        {
+            for(int j=i+1; j<StudentNumber; j++)
+            {
+                if(arr[i]<arr[j])
+                {
+                    swap(arr[i],arr[j]);
+                }
+            }
+        }
+
+        float *ar=new float[StudentNumber];
+
+        int i=0,j=0;
+        while(i<StudentNumber-1)
+        {
+            if(arr[i]!=arr[i+1])
+            {
+                ar[j]=arr[i];
+                j++;
+            }
+            i++;
+        }
+        ar[j]=arr[i];
+
+        for(int k=0; k<StudentNumber; k++)
+        {
+            for(int l=0; l<StudentNumber; l++)
+            {
+                if(student[k].GetCGPA()==ar[l])
+                {
+                    StudentMerit[k].SetMerit(l+1);
+                }
+            }
+        }
+
+        delete [] arr;
+        delete [] ar;
+    }
 };
 
 void Course:: GradeCalculate(float temp)
@@ -88,15 +144,15 @@ void Student::InsertStudentInformation(int Serial,int StudentNumber)
 {
     for(int i=0; i<Max; i++)
     {
-        Input:
+Input:
         cout<<"Course "<<i+1<<":\n";
         cout<<"Grade: ";
         float TempGrade;
         cin>>TempGrade;
         if(TempGrade>4 || TempGrade<0)
         {
-           cout<<"Invalid Grade!! Enter Again\n";
-           goto Input;
+            cout<<"Invalid Grade!! Enter Again\n";
+            goto Input;
         }
         else
         {
@@ -160,40 +216,22 @@ void Student::InsertStudentInformation(int Serial,int StudentNumber)
     }
 }
 
-void Merit(Student student[],int StudentNumber)
+bool Student:: CheckDuplicateStudentID(Student student[],int Size,int StudentID)
 {
-    float *arr=new float[StudentNumber];
-    for(int i=0; i<StudentNumber; i++)
+    bool check=false;
+    for(int i=0; i<Size; i++)
     {
-        arr[i]=student[i].GetCGPA();
-    }
-
-    for(int i=0; i<StudentNumber; i++)
-    {
-        for(int j=i+1; j<StudentNumber; j++)
+        if(student[i].GetStudentID()==StudentID)
         {
-            if(arr[i]<arr[j])
-            {
-                swap(arr[i],arr[j]);
-            }
+            check=true;
+            return check;
         }
     }
 
-    int i=0,j=0;
-    while(i<StudentNumber-1)
-    {
-        if(arr[i]!=arr[i+1])
-        {
-            student[j].SetTemporaryCGPA(arr[i]);
-            j++;
-        }
-        i++;
-    }
-    student[j].SetTemporaryCGPA(arr[i]);
-    delete [] arr;
+    return check;
 }
 
-void StudentResult(Student student[],int StudentRoll,int StudentNumber)
+void Student:: StudentResult(Student student[],MeritCalculation StudentMerit[],int StudentRoll,int StudentNumber)
 {
     bool check=false;
     for(int i=0; i<StudentNumber; i++)
@@ -201,20 +239,8 @@ void StudentResult(Student student[],int StudentRoll,int StudentNumber)
         if(StudentRoll==student[i].GetStudentID())
         {
             check=true;
-            float merit=student[i].GetCGPA();
             cout<<"\nResult:\n"<<"CGPA of the Student ID: "<<StudentRoll<<" is "<<fixed<<setprecision(2)<<student[i].GetCGPA()<<"\n";
-
-            int j=0;
-            while(j<StudentNumber || student[j].GetTemporaryCGPA()!=0)
-            {
-                if(merit==student[j].GetTemporaryCGPA())
-                {
-                    cout<<"Merit Position: "<<j+1<<'\n';
-                    break;
-                }
-                j++;
-            }
-            break;
+            cout<<"Merit Position: "<<StudentMerit[i].GetMerit()<<"\n\n";
         }
     }
     if(!check)
@@ -229,31 +255,38 @@ int main()
     int StudentNumber;
     cin>>StudentNumber;
     Student *student=new Student[StudentNumber];
+    Student Object;
 
     for(int i=0; i<StudentNumber; i++)
     {
+input:
         cout<<"Enter Student "<<i+1<<" Student ID: ";
-        int TemporarySrudentID;
-        cin>>TemporarySrudentID;
-        if(i>0 && student[i-1].GetStudentID()==TemporarySrudentID)
+        int StudentID;
+        cin>>StudentID;
+        if(i>0 && Object.CheckDuplicateStudentID(student,i,StudentID))
         {
             cout<<"Student ID has Already Entered!! Please Enter Another Student ID\n";
-            i--;
+            goto input;
         }
         else
         {
-            student[i].SetStudentID(TemporarySrudentID);
+            student[i].SetStudentID(StudentID);
             student[i].InsertStudentInformation(i,StudentNumber);
         }
     }
 
-    Merit(student,StudentNumber);
+    MeritCalculation *StudentMerit=new MeritCalculation[StudentNumber];
+    MeritCalculation Obj;
+    Obj.MeritDeterminer(StudentMerit,student,StudentNumber);
 
-    cout<<"\nEnter Student ID: ";
     int StudentRoll;
-    cin>>StudentRoll;
-    StudentResult(student,StudentRoll,StudentNumber);
+    cout<<"\nEnter Student ID:\n";
+    while(cin>>StudentRoll,StudentRoll>0)
+    {
+        Object.StudentResult(student,StudentMerit,StudentRoll,StudentNumber);
+    }
 
     delete[] student;
+    delete[] StudentMerit;
 }
 
