@@ -5,6 +5,7 @@ struct Node {
 	Node* next;
 };
 Node* head = nullptr, * tail = nullptr;
+
 int Listsize(Node* temp)
 {
 	int count = 0;
@@ -15,6 +16,7 @@ int Listsize(Node* temp)
 	}
 	return count;
 }
+
 void InsertLast(int data)
 {
 	Node* temp = new Node;
@@ -31,6 +33,7 @@ void InsertLast(int data)
 		tail = tail->next;
 	}
 }
+
 void InsertFirst(int data)
 {
 	Node* temp = new Node;
@@ -38,7 +41,8 @@ void InsertFirst(int data)
 	temp->next = head;
 	head = temp;
 }
-void InsertPosition(int data, int pos)
+
+void InsertPosition(int pos,int data)
 {
 	if (pos > Listsize(head) || pos < 0)
 	{
@@ -68,12 +72,14 @@ void InsertPosition(int data, int pos)
 		temp->next = CurrentNode;
 	}
 }
+
 void DeleteFirst()
 {
 	Node* temp = head;
 	head= head->next;
 	delete temp;
 }
+
 void DeleteLast()
 {
 	Node* PreviousNode = new Node;
@@ -88,6 +94,7 @@ void DeleteLast()
 	delete CurrentNode;
 
 }
+
 void DeletePosition(int pos)
 {
 	if (pos >= Listsize(head) || pos < 0 )
@@ -120,6 +127,7 @@ void DeletePosition(int pos)
 		}
 	}
 }
+
 void print(Node* temp)
 {
 	int i = 0;
@@ -136,6 +144,7 @@ void print(Node* temp)
 	}
 	cout << "\n";
 }
+
 void reverseprint(Node* temp)
 {
 	Node* CurrentNode = head;
@@ -182,9 +191,24 @@ void Sort()
         i=i->next;
     }
 }
+
+bool Search(int num)
+{
+    Node* temp=head;
+    while(temp!=nullptr)
+    {
+        if(temp->data==num)
+        {
+            return true;
+        }
+        temp=temp->next;
+    }
+    return false;
+}
+
 int main()
 {
-	cout << "Insert at Last:\n";
+	cout << "Data Will be Insert at Last:\n";
 	cout << "Enter List Size:\n";
 	int size;
 	cin >> size;
@@ -199,7 +223,7 @@ int main()
 	cout << "\nList Elements:\n";
 	print(head);
 
-	cout << "\n\nInsert at First:\n";
+	cout << "\n\nEnter the Number You Want to Insert at First:\n";
 	int num;
 	cin >> num;
 	InsertFirst(num);
@@ -209,10 +233,10 @@ int main()
 
 
 	cout << "\n\nInsert at Specific Position:\n";
-	cout << "Enter Value & Position Which You gonna insert in this Position:\n";
+	cout << "Enter Position & Value Which You gonna insert in this Position:\n";
 	int value, pos;
-	cin >> value >> pos;
-	InsertPosition(value, pos);
+	cin >>pos>>value;
+	InsertPosition(pos,value);
 
 	cout << "\nAfter Inserting the Value at Specific Position List Elements will be:\n";
 	print(head);
@@ -231,6 +255,18 @@ int main()
 	DeletePosition(p);
 	cout << "\nAfter Deleting The Node in Specific Position List Elements will be:\n";
 	print(head);
+
+	cout << "\n\nEnter the Number You Want to Find:\n";
+	int s;
+	cin>>s;
+	if(Search(s))
+    {
+        cout<<"Number Found\n";
+    }
+    else
+    {
+        cout<<"Number Not Found!!\n";
+    }
 
 	Sort();
 	cout << "\nAfter Sorting List Elements will be:\n";
