@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Samim Arefin/Desktop/Stack/main.cpp
+stack.h
+C:/Users/Samim Arefin/Desktop/Stack/stack.h
+iostream
+-
+
+C:/Users/Samim Arefin/Desktop/Stack/stack.h
+
