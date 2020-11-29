@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Samim Arefin\Desktop\Queue"
+CMAKE_SOURCE_DIR = D:\Samim\CSE-2101-Data-Structure\Queue
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Samim Arefin\Desktop\Queue\cmake-build-debug"
+CMAKE_BINARY_DIR = D:\Samim\CSE-2101-Data-Structure\Queue\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Queue.dir/depend.make
@@ -78,29 +78,29 @@ include CMakeFiles/Queue.dir/flags.make
 
 CMakeFiles/Queue.dir/main.cpp.obj: CMakeFiles/Queue.dir/flags.make
 CMakeFiles/Queue.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Samim Arefin\Desktop\Queue\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Queue.dir/main.cpp.obj"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Queue.dir\main.cpp.obj -c "C:\Users\Samim Arefin\Desktop\Queue\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Samim\CSE-2101-Data-Structure\Queue\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Queue.dir/main.cpp.obj"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Queue.dir\main.cpp.obj -c D:\Samim\CSE-2101-Data-Structure\Queue\main.cpp
 
 CMakeFiles/Queue.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Queue.dir/main.cpp.i"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Samim Arefin\Desktop\Queue\main.cpp" > CMakeFiles\Queue.dir\main.cpp.i
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Samim\CSE-2101-Data-Structure\Queue\main.cpp > CMakeFiles\Queue.dir\main.cpp.i
 
 CMakeFiles/Queue.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Queue.dir/main.cpp.s"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Samim Arefin\Desktop\Queue\main.cpp" -o CMakeFiles\Queue.dir\main.cpp.s
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Samim\CSE-2101-Data-Structure\Queue\main.cpp -o CMakeFiles\Queue.dir\main.cpp.s
 
 CMakeFiles/Queue.dir/queue.cpp.obj: CMakeFiles/Queue.dir/flags.make
 CMakeFiles/Queue.dir/queue.cpp.obj: ../queue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Samim Arefin\Desktop\Queue\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Queue.dir/queue.cpp.obj"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Queue.dir\queue.cpp.obj -c "C:\Users\Samim Arefin\Desktop\Queue\queue.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Samim\CSE-2101-Data-Structure\Queue\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Queue.dir/queue.cpp.obj"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Queue.dir\queue.cpp.obj -c D:\Samim\CSE-2101-Data-Structure\Queue\queue.cpp
 
 CMakeFiles/Queue.dir/queue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Queue.dir/queue.cpp.i"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Samim Arefin\Desktop\Queue\queue.cpp" > CMakeFiles\Queue.dir\queue.cpp.i
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Samim\CSE-2101-Data-Structure\Queue\queue.cpp > CMakeFiles\Queue.dir\queue.cpp.i
 
 CMakeFiles/Queue.dir/queue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Queue.dir/queue.cpp.s"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Samim Arefin\Desktop\Queue\queue.cpp" -o CMakeFiles\Queue.dir\queue.cpp.s
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Samim\CSE-2101-Data-Structure\Queue\queue.cpp -o CMakeFiles\Queue.dir\queue.cpp.s
 
 # Object files for target Queue
 Queue_OBJECTS = \
@@ -116,7 +116,7 @@ Queue.exe: CMakeFiles/Queue.dir/build.make
 Queue.exe: CMakeFiles/Queue.dir/linklibs.rsp
 Queue.exe: CMakeFiles/Queue.dir/objects1.rsp
 Queue.exe: CMakeFiles/Queue.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Samim Arefin\Desktop\Queue\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Queue.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Samim\CSE-2101-Data-Structure\Queue\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Queue.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Queue.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -129,6 +129,6 @@ CMakeFiles/Queue.dir/clean:
 .PHONY : CMakeFiles/Queue.dir/clean
 
 CMakeFiles/Queue.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Samim Arefin\Desktop\Queue" "C:\Users\Samim Arefin\Desktop\Queue" "C:\Users\Samim Arefin\Desktop\Queue\cmake-build-debug" "C:\Users\Samim Arefin\Desktop\Queue\cmake-build-debug" "C:\Users\Samim Arefin\Desktop\Queue\cmake-build-debug\CMakeFiles\Queue.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Samim\CSE-2101-Data-Structure\Queue D:\Samim\CSE-2101-Data-Structure\Queue D:\Samim\CSE-2101-Data-Structure\Queue\cmake-build-debug D:\Samim\CSE-2101-Data-Structure\Queue\cmake-build-debug D:\Samim\CSE-2101-Data-Structure\Queue\cmake-build-debug\CMakeFiles\Queue.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Queue.dir/depend
 

@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Samim Arefin\Desktop\Stack"
+CMAKE_SOURCE_DIR = D:\Samim\CSE-2101-Data-Structure\Stack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Samim Arefin\Desktop\Stack\cmake-build-debug"
+CMAKE_BINARY_DIR = D:\Samim\CSE-2101-Data-Structure\Stack\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Stack.dir/depend.make
@@ -78,29 +78,29 @@ include CMakeFiles/Stack.dir/flags.make
 
 CMakeFiles/Stack.dir/main.cpp.obj: CMakeFiles/Stack.dir/flags.make
 CMakeFiles/Stack.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Samim Arefin\Desktop\Stack\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Stack.dir/main.cpp.obj"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Stack.dir\main.cpp.obj -c "C:\Users\Samim Arefin\Desktop\Stack\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Samim\CSE-2101-Data-Structure\Stack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Stack.dir/main.cpp.obj"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Stack.dir\main.cpp.obj -c D:\Samim\CSE-2101-Data-Structure\Stack\main.cpp
 
 CMakeFiles/Stack.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Stack.dir/main.cpp.i"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Samim Arefin\Desktop\Stack\main.cpp" > CMakeFiles\Stack.dir\main.cpp.i
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Samim\CSE-2101-Data-Structure\Stack\main.cpp > CMakeFiles\Stack.dir\main.cpp.i
 
 CMakeFiles/Stack.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Stack.dir/main.cpp.s"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Samim Arefin\Desktop\Stack\main.cpp" -o CMakeFiles\Stack.dir\main.cpp.s
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Samim\CSE-2101-Data-Structure\Stack\main.cpp -o CMakeFiles\Stack.dir\main.cpp.s
 
 CMakeFiles/Stack.dir/stack.cpp.obj: CMakeFiles/Stack.dir/flags.make
 CMakeFiles/Stack.dir/stack.cpp.obj: ../stack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Samim Arefin\Desktop\Stack\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Stack.dir/stack.cpp.obj"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Stack.dir\stack.cpp.obj -c "C:\Users\Samim Arefin\Desktop\Stack\stack.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Samim\CSE-2101-Data-Structure\Stack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Stack.dir/stack.cpp.obj"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Stack.dir\stack.cpp.obj -c D:\Samim\CSE-2101-Data-Structure\Stack\stack.cpp
 
 CMakeFiles/Stack.dir/stack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Stack.dir/stack.cpp.i"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Samim Arefin\Desktop\Stack\stack.cpp" > CMakeFiles\Stack.dir\stack.cpp.i
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Samim\CSE-2101-Data-Structure\Stack\stack.cpp > CMakeFiles\Stack.dir\stack.cpp.i
 
 CMakeFiles/Stack.dir/stack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Stack.dir/stack.cpp.s"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Samim Arefin\Desktop\Stack\stack.cpp" -o CMakeFiles\Stack.dir\stack.cpp.s
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Samim\CSE-2101-Data-Structure\Stack\stack.cpp -o CMakeFiles\Stack.dir\stack.cpp.s
 
 # Object files for target Stack
 Stack_OBJECTS = \
@@ -116,7 +116,7 @@ Stack.exe: CMakeFiles/Stack.dir/build.make
 Stack.exe: CMakeFiles/Stack.dir/linklibs.rsp
 Stack.exe: CMakeFiles/Stack.dir/objects1.rsp
 Stack.exe: CMakeFiles/Stack.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Samim Arefin\Desktop\Stack\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Stack.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Samim\CSE-2101-Data-Structure\Stack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Stack.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Stack.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -129,6 +129,6 @@ CMakeFiles/Stack.dir/clean:
 .PHONY : CMakeFiles/Stack.dir/clean
 
 CMakeFiles/Stack.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Samim Arefin\Desktop\Stack" "C:\Users\Samim Arefin\Desktop\Stack" "C:\Users\Samim Arefin\Desktop\Stack\cmake-build-debug" "C:\Users\Samim Arefin\Desktop\Stack\cmake-build-debug" "C:\Users\Samim Arefin\Desktop\Stack\cmake-build-debug\CMakeFiles\Stack.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Samim\CSE-2101-Data-Structure\Stack D:\Samim\CSE-2101-Data-Structure\Stack D:\Samim\CSE-2101-Data-Structure\Stack\cmake-build-debug D:\Samim\CSE-2101-Data-Structure\Stack\cmake-build-debug D:\Samim\CSE-2101-Data-Structure\Stack\cmake-build-debug\CMakeFiles\Stack.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Stack.dir/depend
 

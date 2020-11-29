@@ -2,35 +2,18 @@
 Created by Samim Arefin on 11/26/2020.
 Pabna University of Science & Technology
 */
-#include<iostream>
 #include "stack.h"
-stack* head=nullptr;
-void stack:: push(char ch)
+template<typename T> void stack<T>:: push(T value)
 {
-    stack* Node=new stack;
-    Node->data=ch;
-    Node->next=head;
-    head=Node;
+    List <T> *Node = new List<T>;
+    Node->setdata(value);
+    Node->setnext(head);
+    head = Node;
 }
 
-void stack:: pop()
+template<typename T> bool stack<T>:: empty()
 {
-    if(empty())
-    {
-        std::cout<<"Empty\n";
-        return;
-    }
-    else
-    {
-        stack* Node=head;
-        head=head->next;
-        delete Node;
-    }
-}
-
-bool stack:: empty()
-{
-    if(head==nullptr)
+    if (head == nullptr)
     {
         return true;
     }
@@ -40,35 +23,47 @@ bool stack:: empty()
     }
 }
 
-char stack:: top()
+template<typename T> void stack<T>:: pop()
 {
-    return (head->data);
-}
-
-void stack:: clear()
-{
-    if(empty())
+    if (empty())
     {
         return;
     }
     else
     {
-        while(head!=nullptr)
+        List<T> *Node = head;
+        head = head->getnext();
+        delete Node;
+    }
+}
+
+template<typename T> T stack<T>:: top()
+{
+    return (head->getdata());
+}
+
+template<typename T> void stack<T>:: clear()
+{
+    if (empty())
+    {
+        return;
+    }
+    else
+    {
+        while (head != nullptr)
         {
-            stack* Node=head;
-            head=head->next;
+            List<T> *Node = head;
+            head = head->getnext();
             delete Node;
         }
     }
 }
 
-int stack:: size()
-{
-    stack* temp=head;
-    int count=0;
-    while(temp!=nullptr)
-    {
-        temp=temp->next;
+template<typename T> int stack<T>:: size() {
+    int count = 0;
+    List<T> *Node = head;
+    while (Node != nullptr) {
+        Node = Node->getnext();
         count++;
     }
     return count;

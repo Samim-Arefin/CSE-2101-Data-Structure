@@ -4,13 +4,13 @@ Pabna University of Science & Technology
 */
 
 #include "queue.h"
-queue* head=nullptr,*tail=nullptr;
 
-void queue:: push(char ch)
+
+template<typename T> void queue<T>:: push(T data)
 {
-    queue* Node=new queue;
-    Node->data=ch;
-    Node->next=nullptr;
+    List<T> *Node=new List<T>;
+    Node->setdata(data);
+    Node->setnext(nullptr);
 
     if(head==nullptr)
     {
@@ -18,12 +18,12 @@ void queue:: push(char ch)
     }
     else
     {
-        tail->next=Node;
-        tail=tail->next;
+        tail->setnext(Node);
+        tail=tail->getnext();
     }
 }
 
-bool queue:: empty()
+template<typename T> bool queue<T>:: empty()
 {
    if(head==nullptr)
    {
@@ -35,7 +35,7 @@ bool queue:: empty()
    }
 }
 
-void queue:: pop()
+template<typename T> void queue<T>:: pop()
 {
     if(empty())
     {
@@ -43,23 +43,23 @@ void queue:: pop()
     }
     else
     {
-        queue* Node=head;
-        head=head->next;
+        List<T> *Node=head;
+        head=head->getnext();
         delete Node;
     }
 }
 
-char queue:: front()
+template<typename T> T queue<T>:: front()
 {
-    return (head->data);
+    return (head->getdata());
 }
 
-char queue:: back()
+template<typename T> T queue<T>:: back()
 {
-    return (tail->data);
+    return (tail->getdata());
 }
 
-void queue:: clear()
+template<typename T> void queue<T>:: clear()
 {
     if(empty())
     {
@@ -69,20 +69,20 @@ void queue:: clear()
     {
         while(head!=nullptr)
         {
-            queue* Node=head;
-            head=head->next;
+            List<T> *Node=head;
+            head=head->getnext();
             delete Node;
         }
     }
 }
 
-int queue:: size()
+template<typename T> int queue<T>:: size()
 {
-    queue* temp=head;
+    List<T> *temp=head;
     int count=0;
     while(temp!=nullptr)
     {
-        temp=temp->next;
+        temp=temp->getnext();
         count++;
     }
     return count;

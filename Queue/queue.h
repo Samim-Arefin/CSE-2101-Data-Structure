@@ -2,23 +2,32 @@
 Created by Samim Arefin on 11/26/2020.
 Pabna University of Science & Technology
 */
-
+#include "list.h"
 #ifndef QUEUE_QUEUE_H
 #define QUEUE_QUEUE_H
 
 
-class queue {
-  char data;
-  queue* next;
+template<typename T>
+class queue
+{
+    List<T> *head;
+    List<T> *tail;
 public:
-    void push(char ch);
-    void pop();
+    queue()
+    {
+        head = nullptr;
+        tail=nullptr;
+    }
+    void push(T value);
     bool empty();
-    char front();
-    char back();
+    void pop();
+    T front();
+    T back();
     void clear();
     int size();
+
 };
+
 
 
 #endif //QUEUE_QUEUE_H

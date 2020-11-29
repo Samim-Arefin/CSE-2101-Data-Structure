@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Samim Arefin/Desktop/Stack
+# Install script for directory: D:/Samim/CSE-2101-Data-Structure/Stack
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Samim Arefin/Desktop/Stack/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Samim/CSE-2101-Data-Structure/Stack/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

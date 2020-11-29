@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Samim Arefin/Desktop/Queue/main.cpp" "C:/Users/Samim Arefin/Desktop/Queue/cmake-build-debug/CMakeFiles/Queue.dir/main.cpp.obj"
-  "C:/Users/Samim Arefin/Desktop/Queue/queue.cpp" "C:/Users/Samim Arefin/Desktop/Queue/cmake-build-debug/CMakeFiles/Queue.dir/queue.cpp.obj"
+  "D:/Samim/CSE-2101-Data-Structure/Queue/main.cpp" "D:/Samim/CSE-2101-Data-Structure/Queue/cmake-build-debug/CMakeFiles/Queue.dir/main.cpp.obj"
+  "D:/Samim/CSE-2101-Data-Structure/Queue/queue.cpp" "D:/Samim/CSE-2101-Data-Structure/Queue/cmake-build-debug/CMakeFiles/Queue.dir/queue.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

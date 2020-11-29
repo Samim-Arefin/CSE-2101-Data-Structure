@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Samim Arefin/Desktop/Queue/main.cpp
-queue.h
-C:/Users/Samim Arefin/Desktop/Queue/queue.h
+D:/Samim/CSE-2101-Data-Structure/Queue/list.h
+
+D:/Samim/CSE-2101-Data-Structure/Queue/main.cpp
+queue.cpp
+D:/Samim/CSE-2101-Data-Structure/Queue/queue.cpp
 iostream
 -
 
-C:/Users/Samim Arefin/Desktop/Queue/queue.cpp
+D:/Samim/CSE-2101-Data-Structure/Queue/queue.cpp
 queue.h
-C:/Users/Samim Arefin/Desktop/Queue/queue.h
+D:/Samim/CSE-2101-Data-Structure/Queue/queue.h
 
-C:/Users/Samim Arefin/Desktop/Queue/queue.h
+D:/Samim/CSE-2101-Data-Structure/Queue/queue.h
+list.h
+D:/Samim/CSE-2101-Data-Structure/Queue/list.h
 

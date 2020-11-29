@@ -3,4 +3,4 @@ project(Stack)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Stack main.cpp stack.cpp stack.h)
+add_executable(Stack main.cpp stack.cpp stack.h list.h)

@@ -63,10 +63,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Samim Arefin\Desktop\Stack"
+CMAKE_SOURCE_DIR = D:\Samim\CSE-2101-Data-Structure\Stack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Samim Arefin\Desktop\Stack\cmake-build-debug"
+CMAKE_BINARY_DIR = D:\Samim\CSE-2101-Data-Structure\Stack\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -93,14 +93,14 @@ clean: CMakeFiles/Stack.dir/clean
 CMakeFiles/Stack.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Samim Arefin\Desktop\Stack\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target Stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Samim\CSE-2101-Data-Structure\Stack\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target Stack"
 .PHONY : CMakeFiles/Stack.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Stack.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Samim Arefin\Desktop\Stack\cmake-build-debug\CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Samim\CSE-2101-Data-Structure\Stack\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Stack.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Samim Arefin\Desktop\Stack\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Samim\CSE-2101-Data-Structure\Stack\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Stack.dir/rule
 
 # Convenience name for target.

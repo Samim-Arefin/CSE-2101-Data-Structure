@@ -1,33 +1,40 @@
-#include "queue.h"
+#include "queue.cpp"
 #include <iostream>
 
 int main() {
-    queue q;
+    queue<std::string>q;
 
-    q.push('#');
+    q.push("Hello");
 
-    std::cout<<"Size of Queue: "<<q.size()<<'\n';
+    std::cout<<q.front()<<'\n';
 
     q.pop();
 
-    q.push('S');
-    q.push('a');
-    q.push('m');
-    q.push('i');
-    q.push('m');
+    std::cout<<"Size of Queue: "<<q.size()<<'\n';
 
-    std::cout<<"\nSize of Queue: "<<q.size()<<'\n';
+    q.push("Samim");
+    q.push("Arefin");
+    q.push("Sheikh");
 
     std::cout<<"\nFront of Queue: "<<q.front()<<'\n';
+    std::cout<<"\nBack of Queue: "<<q.back()<<'\n';
 
-    std::cout<<"Back of Queue: "<<q.back()<<'\n';
+    int count=1,size=q.size();
 
     while(!q.empty())
     {
         std::cout<<q.front();
+        if(count<size)
+        {
+            std::cout<<" ";
+        }
         q.pop();
+        count++;
     }
+
     std::cout<<'\n';
+
+
 
     return 0;
 }

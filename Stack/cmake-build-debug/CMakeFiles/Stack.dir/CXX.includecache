@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Samim Arefin/Desktop/Stack/main.cpp
-stack.h
-C:/Users/Samim Arefin/Desktop/Stack/stack.h
+D:/Samim/CSE-2101-Data-Structure/Stack/list.h
+
+D:/Samim/CSE-2101-Data-Structure/Stack/main.cpp
+stack.cpp
+D:/Samim/CSE-2101-Data-Structure/Stack/stack.cpp
 iostream
 -
 
-C:/Users/Samim Arefin/Desktop/Stack/stack.h
+D:/Samim/CSE-2101-Data-Structure/Stack/stack.cpp
+stack.h
+D:/Samim/CSE-2101-Data-Structure/Stack/stack.h
+
+D:/Samim/CSE-2101-Data-Structure/Stack/stack.h
+list.h
+D:/Samim/CSE-2101-Data-Structure/Stack/list.h
 
