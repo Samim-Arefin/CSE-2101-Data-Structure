@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Priority Queue/list.h
+
+D:/Priority Queue/main.cpp
+queue.cpp
+D:/Priority Queue/queue.cpp
+iostream
+-
+
+D:/Priority Queue/queue.cpp
+iostream
+-
+queue.h
+D:/Priority Queue/queue.h
+
+D:/Priority Queue/queue.h
+list.h
+D:/Priority Queue/list.h
+
