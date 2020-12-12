@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Samim/CSE-2101-Data-Structure/Binary Search Tree/BST.cpp
+iostream
+-
+BST.h
+D:/Samim/CSE-2101-Data-Structure/Binary Search Tree/BST.h
+
+D:/Samim/CSE-2101-Data-Structure/Binary Search Tree/BST.h
+
+D:/Samim/CSE-2101-Data-Structure/Binary Search Tree/main.cpp
+BST.h
+D:/Samim/CSE-2101-Data-Structure/Binary Search Tree/BST.h
+iostream
+-
+
